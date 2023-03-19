@@ -1,12 +1,9 @@
-package go_utils
+package goutils
 
-import {
-	"net/http"
-}
+import "net/http"
 
-func main(w *http.ResponseWriter) {
+func Cors(w *http.ResponseWriter) {
 	(*w).Header().Set("Access-Control-Allow-Origin", "*")
 	(*w).Header().Set("Access-Control-Allow-Methods", "GET")
 	(*w).Header().Set("Access-Control-Allow-Headers", "Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization")
 }
-
