@@ -1,4 +1,4 @@
-package goutils
+package cors
 
 import "net/http"
 
