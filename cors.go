@@ -1,6 +1,8 @@
 package cors
 
-import "net/http"
+import (
+	"net/http"
+)
 
 func Cors(w *http.ResponseWriter) {
 	(*w).Header().Set("Access-Control-Allow-Origin", "*")
